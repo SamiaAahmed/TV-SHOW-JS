@@ -1,0 +1,117 @@
+:root {
+    --main_white_color: #FFF0DC;
+    --main_red_color: #FF0101;
+    --main_blue_color: #110D2E;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    margin: 0%;
+    background-color: var(--main_blue_color);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: 'bold';
+    src: url('fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url('fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'light';
+    src: url('fonts/Poppins-Light.ttf');
+}
+
+header {
+    display: flex;
+    padding: 29px 84px;
+    align-items: flex-start;
+    gap: 87px;
+    justify-content: center;
+    background-color: var(--main_blue_color);
+    position: fixed;
+}
+
+.login-botton {
+    display: flex;
+    padding: 5px 32px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 5px;
+    background-color: var(--main_red_color);
+    transition: background-color .3s ease, border .3s ease;
+    cursor: pointer;
+}
+
+.login-botton:hover {
+    background-color: transparent;
+    border: 2px solid var(--main_red_color);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    gap: 111px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav__link {
+    color: var(--main_white_color);
+    text-decoration: none;
+    font-family: 'regular';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: background-color .15s ease, color .15s ease;
+}
+
+.nav__link:hover {
+    color: var(--main_red_color);
+}
+
+.nav__logo {
+    width: 86px;
+    height: 50px;
+}
+
+h4 {
+    font-family: 'regular';
+    color: var(--main_white_color);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 98px;
+}
+
+.heroimage {
+    width: 650px;
+    height: 650px;
+}
