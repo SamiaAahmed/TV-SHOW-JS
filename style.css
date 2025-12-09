@@ -105,13 +105,50 @@ h4 {
 
 main {
     display: flex;
-    width: 100%;
+    width: 1280px;
     flex-direction: column;
     align-items: center;
     gap: 98px;
+    margin-top: 100px;
 }
 
 .heroimage {
     width: 650px;
     height: 650px;
+}
+
+.herosection {
+    display: flex;
+    align-items: center;
+    gap: 58px;
+    flex-direction: row;
+}
+
+.hero-div-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.big-logo {
+    height: 264px;
+    align-self: stretch;
+    aspect-ratio: 455/264;
+}
+
+.button {
+    display: flex;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 5px;
+    background-color: var(--main_red_color);
+    cursor: pointer;
+    transition: background-color .3s ease, border .3s ease;
+}
+
+.button:hover {
+    background-color: transparent;
+    border: 2px solid var(--main_red_color);
 }
