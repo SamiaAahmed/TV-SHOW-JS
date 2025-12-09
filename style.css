@@ -33,6 +33,11 @@ body {
     src: url('fonts/Poppins-Light.ttf');
 }
 
+@font-face {
+    font-family: 'porter';
+    src: url('fonts/porter-sans-inline-block.ttf');
+}
+
 header {
     display: flex;
     padding: 29px 84px;
@@ -41,6 +46,7 @@ header {
     justify-content: center;
     background-color: var(--main_blue_color);
     position: fixed;
+    z-index: 1000;
 }
 
 .login-botton {
@@ -151,4 +157,103 @@ main {
 .button:hover {
     background-color: transparent;
     border: 2px solid var(--main_red_color);
+}
+
+.section-1 {
+    width: 1280px;
+    background-image: url(Assets/background\ 1.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50PX;
+}
+
+.big-character-div {
+    width: 446px;
+    height: 460px;
+    position: relative;
+}
+
+.otherpic {
+    display: flex;
+    width: 338px;
+    height: 358px;
+    padding: 22px 28px 23px 27px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main_white_color);
+    position: absolute;
+    top: 95;
+    left: 100;
+}
+
+.character-div {
+    display: inline-flex;
+    padding: 16px 36px 21px 36px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24.431px;
+    background-color: var(--main_white_color);
+    position: absolute;
+    z-index: 10;
+}
+
+.pin {
+    width: 53px;
+    height: 53px;
+    position: absolute;
+    z-index: 100;
+    background-image: url(Assets/PIN.svg);
+    top: -20;
+}
+
+.section1-div1 {
+    display: flex;
+    width: 1080px;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+}
+
+.section1-div2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 37px;
+}
+
+.section1-div3 {
+    display: flex;
+    align-items: flex-start;
+    gap: 188px;
+    flex-direction: row;
+}
+
+h2 {
+    font-family: 'regular';
+    color: var(--main_red_color);
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.agent-img {
+    filter: saturate(0);
+}
+
+.agent-img:hover {
+    filter: saturate(1);
+    transition: filter .3s ease;
+}
+
+.h4-2 {
+    font-family: 'porter';
+    color: var(--main_blue_color);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
